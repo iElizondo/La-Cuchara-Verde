@@ -11,6 +11,9 @@ import { NosotrosComponent } from './componentes/nosotros/nosotros.component';
 import { ContactenosComponent } from './componentes/contactenos/contactenos.component';
 import { EncabezadoComponent } from './componentes/encabezado/encabezado.component';
 import { BNavegacionComponent } from './componentes/b-navegacion/b-navegacion.component';
+import { CarpNavegacionComponent } from './componentes/carp-navegacion/carp-navegacion.component';
+import { CarruselComponent } from './componentes/carrusel/carrusel.component';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -22,11 +25,14 @@ import { BNavegacionComponent } from './componentes/b-navegacion/b-navegacion.co
     NosotrosComponent,
     ContactenosComponent,
     EncabezadoComponent,
-    BNavegacionComponent
+    BNavegacionComponent,
+    CarpNavegacionComponent,
+    CarruselComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
