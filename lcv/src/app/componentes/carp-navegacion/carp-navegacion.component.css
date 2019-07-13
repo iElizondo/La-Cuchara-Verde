@@ -1,0 +1,14 @@
+.fondo {
+    background: rgb(111, 87, 165);
+}
+
+.carpeta {
+    color: rgb(255, 255, 255);
+    background: rgb(136, 179, 63);
+    margin-bottom: 30px;
+}
+
+.imagen {
+    height: 250px;
+    width: 250px;
+}
