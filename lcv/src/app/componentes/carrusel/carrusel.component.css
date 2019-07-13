@@ -1,0 +1,10 @@
+.carousel-img {
+    position: relative;
+    height: 30vh;
+    overflow: hidden;
+    filter: brightness(0.4);
+}
+
+.carousel-img img {
+    position: relative;
+}

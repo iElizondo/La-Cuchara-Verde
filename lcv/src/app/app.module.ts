@@ -11,8 +11,9 @@ import { NosotrosComponent } from './componentes/nosotros/nosotros.component';
 import { ContactenosComponent } from './componentes/contactenos/contactenos.component';
 import { EncabezadoComponent } from './componentes/encabezado/encabezado.component';
 import { BNavegacionComponent } from './componentes/b-navegacion/b-navegacion.component';
-import { CarpNavegacionComponent } from './componentes/carp-navegacion/carp-navegacion.component';
 import { CarruselComponent } from './componentes/carrusel/carrusel.component';
+import { CarpNavegacionComponent } from './componentes/carp-navegacion/carp-navegacion.component'
+
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
@@ -26,8 +27,8 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
     ContactenosComponent,
     EncabezadoComponent,
     BNavegacionComponent,
-    CarpNavegacionComponent,
-    CarruselComponent
+    CarruselComponent,
+    CarpNavegacionComponent
   ],
   imports: [
     BrowserModule,
