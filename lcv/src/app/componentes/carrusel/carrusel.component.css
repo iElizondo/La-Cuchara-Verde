@@ -8,3 +8,7 @@
 .carousel-img img {
     position: relative;
 }
+
+.m-b {
+    margin-bottom: 10px;
+}
