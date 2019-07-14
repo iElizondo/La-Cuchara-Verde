@@ -15,7 +15,6 @@ export class CarpNavegacionComponent implements OnInit {
                            new CarpNavegacion("Nosotros","../../../assets/imagenes/Cartas-Mavegacion/nosotros-n.png"),
                            new CarpNavegacion("Contactenos","../../../assets/imagenes/Cartas-Mavegacion/contactenos-n.png")
                            );
-    console.log(this.carpNavegacion);
   }
 
 }
