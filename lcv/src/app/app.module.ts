@@ -16,6 +16,8 @@ import { CarpNavegacionComponent } from './componentes/carp-navegacion/carp-nave
 
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
+import { AngularFontAwesomeModule } from 'angular-font-awesome';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -33,7 +35,8 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    AngularFontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
