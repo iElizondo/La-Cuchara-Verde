@@ -1,5 +1,5 @@
 <div class="row fondo">
-    <div class="col-sm-6" *ngFor="let carp of carpNavegacion">
+    <div class="col-sm-6" *ngFor="let carp of carpNavegacion" (click)="navegacion(carp.nombre)">
         <div class="card carpeta">
             <div class="card-boby">
                 <h1 class="card-title">{{carp.nombre}}</h1>
