@@ -1,4 +1,9 @@
 import { Component, OnInit } from '@angular/core';
+import { Menu } from 'src/app/clases/menu/menu';
+
+import { Router } from '@angular/router';
+
+import { from } from 'rxjs';
 
 @Component({
   selector: 'app-menu',
@@ -7,9 +12,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MenuComponent implements OnInit {
 
-  constructor() { }
+  listMenu: Menu[]=[];
+
+  constructor(private router: Router) { }
 
   ngOnInit() {
+    this.listMenu.push(new Menu(0,"Poke Bowl","../../../assets/imagenes/Menu/poke-bowl.jpg"),
+                       new Menu(1,"Wrap","../../../assets/imagenes/Menu/wrap.jpg"),
+                       new Menu(2,"Ceviche","../../../assets/imagenes/Menu/ceviche.jpg"),
+                       new Menu(3,"Desayuno","../../../assets/imagenes/Menu/desayuno.jpg"),
+                       new Menu(4,"Almuerzo Ejecutivo","../../../assets/imagenes/Menu/almuerzo.jpg"),
+                       new Menu(5,"Promociones","../../../assets/imagenes/Menu/Promociones.jpg"),
+                       new Menu(6,"Ensaladas","../../../assets/imagenes/Menu/ensaladas.jpg"),
+                       new Menu(7,"Postres","../../../assets/imagenes/Menu/postres.jpg"),
+                       new Menu(8,"Batidos","../../../assets/imagenes/Menu/batidos.jpg"));
   }
 
 }
