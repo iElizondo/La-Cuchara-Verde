@@ -10,7 +10,7 @@ import { ContactenosComponent } from 'src/app/componentes/contactenos/contacteno
 const routes: Routes = [
   { path: 'inicio', component: InicioComponent },
   { path: 'menu', component: MenuComponent },
-  { path: 'platillos', component: PlatillosComponent },
+  { path: 'platillos/:id', component: PlatillosComponent },
   { path: 'blog', component: BlogComponent },
   { path: 'nosotros', component: NosotrosComponent },
   { path: 'contactenos', component: ContactenosComponent },

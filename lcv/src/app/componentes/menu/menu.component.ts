@@ -19,13 +19,11 @@ export class MenuComponent implements OnInit {
   ngOnInit() {
     this.listMenu.push(new Menu(0,"Poke Bowl","../../../assets/imagenes/Menu/poke-bowl.jpg"),
                        new Menu(1,"Wrap","../../../assets/imagenes/Menu/wrap.jpg"),
-                       new Menu(2,"Ceviche","../../../assets/imagenes/Menu/ceviche.jpg"),
-                       new Menu(3,"Desayuno","../../../assets/imagenes/Menu/desayuno.jpg"),
-                       new Menu(4,"Almuerzo Ejecutivo","../../../assets/imagenes/Menu/almuerzo.jpg"),
-                       new Menu(5,"Promociones","../../../assets/imagenes/Menu/Promociones.jpg"),
-                       new Menu(6,"Ensaladas","../../../assets/imagenes/Menu/ensaladas.jpg"),
-                       new Menu(7,"Postres","../../../assets/imagenes/Menu/postres.jpg"),
-                       new Menu(8,"Batidos","../../../assets/imagenes/Menu/batidos.jpg"));
+                       new Menu(2,"Desayuno","../../../assets/imagenes/Menu/desayuno.jpg"),
+                       new Menu(3,"Almuerzo Ejecutivo","../../../assets/imagenes/Menu/almuerzo.jpg"),
+                       new Menu(4,"Promociones","../../../assets/imagenes/Menu/Promociones.jpg"),
+                       new Menu(5,"Ensaladas","../../../assets/imagenes/Menu/ensaladas.jpg"),
+                       new Menu(6,"Postres","../../../assets/imagenes/Menu/postres.jpg"),
+                       new Menu(7,"Batidos","../../../assets/imagenes/Menu/batidos.jpg"));
   }
-
 }

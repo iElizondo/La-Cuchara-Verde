@@ -1,7 +1,7 @@
 <div class="conteiner">
-    <img src="../../../assets/imagenes/Carrusel/ima2.jpg" alt="imagen" class="img-fluid">
+    <app-carrusel></app-carrusel>
     <div class="row">
-        <div class="col-sm-4" *ngFor="let menu of listMenu" (click)="navegacion(carp.nombre)">
+        <div class="col-sm-4" *ngFor="let menu of listMenu" routerLink="/platillos/{{menu.idMenu}}">
             <div class="card carpeta">
                 <div class="card-boby">
                     <h3 class="card-title">{{menu.nombre}}</h3>
