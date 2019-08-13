@@ -1,10 +1,15 @@
-.contacto {
+#color1 {
     background-color: rgb(211, 235, 181, 92%);
     color: rgb(0, 132, 66);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    padding-left: 10px;
 }
 
-.icons {
-    display: block;
+p {
+    position: relative;
+    top: -35px;
+    left: 50px;
+}
+
+input,
+textarea {
+    border-radius: 20px;
 }
