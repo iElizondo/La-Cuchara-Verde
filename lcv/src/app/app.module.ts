@@ -24,6 +24,7 @@ import { environment } from '../environments/environment';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { AngularFireStorageModule } from '@angular/fire/storage';
 import { AngularFireAuthModule } from '@angular/fire/auth';
+import { ModalComponent } from './componentes/modal/modal.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { AngularFireAuthModule } from '@angular/fire/auth';
     EncabezadoComponent,
     BNavegacionComponent,
     CarruselComponent,
-    CarpNavegacionComponent
+    CarpNavegacionComponent,
+    ModalComponent
   ],
   imports: [
     BrowserModule,

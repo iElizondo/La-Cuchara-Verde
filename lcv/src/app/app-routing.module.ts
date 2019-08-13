@@ -6,6 +6,7 @@ import { PlatillosComponent } from 'src/app/componentes/platillos/platillos.comp
 import { BlogComponent } from 'src/app/componentes/blog/blog.component';
 import { NosotrosComponent } from 'src/app/componentes/nosotros/nosotros.component';
 import { ContactenosComponent } from 'src/app/componentes/contactenos/contactenos.component';
+import { ModalComponent } from './componentes/modal/modal.component';
 
 const routes: Routes = [
   { path: 'inicio', component: InicioComponent },
@@ -14,6 +15,7 @@ const routes: Routes = [
   { path: 'blog', component: BlogComponent },
   { path: 'nosotros', component: NosotrosComponent },
   { path: 'contactenos', component: ContactenosComponent },
+  { path: 'modal/:id', component: ModalComponent },
   { path: '**', pathMatch: 'full', redirectTo: 'inicio' }
 ];
 

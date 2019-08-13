@@ -1,3 +1,21 @@
-<p>
-  platillos works!
-</p>
+<div class="conteiner">
+    <app-carrusel></app-carrusel>
+    <div class="row">
+        <div class="col-sm-4" *ngFor="let platillo of selectPlatillos">
+            <div class="card carpeta">
+                <div class="card-boby">
+                    <h3 class="card-title">{{platillo.nombre}}</h3>
+                    <img class="rounded mx-auto d-block imagen" [src]="platillo.imagen" [alt]="platillo.nombre">
+                    <div class="row">
+                        <div class="col">
+                            <fa name="info-circle" class="mr-2 fa-2x"></fa>
+                        </div>
+                        <div class="col">
+                            <p class="presio right">{{platillo.precio}}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
