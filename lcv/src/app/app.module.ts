@@ -24,6 +24,10 @@ import { environment } from '../environments/environment';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { AngularFireStorageModule } from '@angular/fire/storage';
 import { AngularFireAuthModule } from '@angular/fire/auth';
+import { MapaComponent } from './mapa/mapa.component';
+
+import { AgmCoreModule } from '@agm/core';
+import { PieDePaginaComponent } from './pie-de-pagina/pie-de-pagina.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +41,9 @@ import { AngularFireAuthModule } from '@angular/fire/auth';
     EncabezadoComponent,
     BNavegacionComponent,
     CarruselComponent,
-    CarpNavegacionComponent
+    CarpNavegacionComponent,
+    MapaComponent,
+    PieDePaginaComponent
   ],
   imports: [
     BrowserModule,
@@ -47,7 +53,10 @@ import { AngularFireAuthModule } from '@angular/fire/auth';
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireAuthModule,
     AngularFireStorageModule,
-    AngularFirestoreModule
+    AngularFirestoreModule,
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyDlGIIyd5tq6q6WZtks391GARKDavaMSZM'
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]
