@@ -1,0 +1,22 @@
+.carpeta {
+    color: rgb(255, 255, 255);
+    background: rgb(136, 179, 63);
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.imagen {
+    height: 200px;
+    width: 250px;
+    margin-bottom: 5px;
+}
+
+.right {
+    float: right;
+    padding: 10px;
+}
+
+.precio {
+    margin-bottom: .75rem;
+    font-size: 1.25rem;
+}

@@ -1,3 +1,13 @@
-<p>
-  menu works!
-</p>
+<div class="conteiner">
+    <app-carrusel></app-carrusel>
+    <div class="row">
+        <div class="col-sm-4" *ngFor="let menu of listMenu" routerLink="/platillos/{{menu.idMenu}}">
+            <div class="card carpeta">
+                <div class="card-boby">
+                    <h3 class="card-title">{{menu.nombre}}</h3>
+                    <img class="rounded mx-auto d-block imagen" [src]="menu.imagen" [alt]="menu.nombre">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

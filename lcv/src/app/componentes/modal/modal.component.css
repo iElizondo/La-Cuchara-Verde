@@ -1,0 +1,14 @@
+.fondo {
+    background: rgb(59, 35, 113);
+    color: white;
+}
+
+.par {
+    color: rgb(200, 195, 195);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.bot {
+    background: rgb(0, 132, 66);
+    color: white;
+}
