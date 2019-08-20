@@ -8,7 +8,9 @@
                     <img class="rounded mx-auto d-block imagen" [src]="platillo.imagen" [alt]="platillo.nombre">
                     <div class="row">
                         <div class="col">
-                            <fa name="info-circle" class="mr-2 fa-2x"></fa>
+                            <p data-toggle="modal" data-target="#modalInfo" (click)="onPreInfo(platillo)">
+                                <fa name="info-circle" class="mr-2 fa-2x"></fa>
+                            </p>
                         </div>
                         <div class="col">
                             <p class="presio right">{{platillo.precio}}</p>
@@ -19,3 +21,4 @@
         </div>
     </div>
 </div>
+<app-modal></app-modal>
