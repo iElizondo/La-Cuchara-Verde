@@ -1,0 +1,24 @@
+#encabezado {
+    background-color: rgb(211, 235, 181, 92%);
+}
+
+#titulo {
+    text-align: center;
+    color: rgb(0, 132, 66);
+    width: 100%;
+    height: 150px;
+    font-family: Arial Narrow;
+}
+
+#imgTop {
+    width: 100%;
+    height: auto;
+}
+
+#medio {
+    text-align: center;
+    width: 100%;
+    background: rgba(211, 235, 181, .2);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+    color: aliceblue;
+}

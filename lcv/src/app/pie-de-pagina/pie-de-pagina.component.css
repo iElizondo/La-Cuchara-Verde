@@ -1,0 +1,19 @@
+#color1 {
+    background-color: rgb(211, 235, 181, 92%);
+    color: rgb(0, 132, 66);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+hr {
+    color: black;
+    border: 20px;
+    width: 50%;
+}
+
+p {
+    float: left;
+}

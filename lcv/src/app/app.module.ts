@@ -25,6 +25,10 @@ import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { AngularFireStorageModule } from '@angular/fire/storage';
 import { AngularFireAuthModule } from '@angular/fire/auth';
 import { ModalComponent } from './componentes/modal/modal.component';
+import { MapaComponent } from './mapa/mapa.component';
+
+import { AgmCoreModule } from '@agm/core';
+import { PieDePaginaComponent } from './pie-de-pagina/pie-de-pagina.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +43,9 @@ import { ModalComponent } from './componentes/modal/modal.component';
     BNavegacionComponent,
     CarruselComponent,
     CarpNavegacionComponent,
-    ModalComponent
+    ModalComponent,
+    MapaComponent,
+    PieDePaginaComponent
   ],
   imports: [
     BrowserModule,
@@ -49,7 +55,10 @@ import { ModalComponent } from './componentes/modal/modal.component';
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireAuthModule,
     AngularFireStorageModule,
-    AngularFirestoreModule
+    AngularFirestoreModule,
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyDlGIIyd5tq6q6WZtks391GARKDavaMSZM'
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]
