@@ -1,7 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { CarpNavegacion } from 'src/app/clases/carp-navegacion'
-
+import { DatosService } from 'src/app/servicio/datos.service'
 import { Router } from '@angular/router'
+import { from } from 'rxjs';
+
+import { CarpNavegacion } from 'src/app/clases/carp-navegacion';
 
 @Component({
   selector: 'app-carp-navegacion',
@@ -10,14 +12,12 @@ import { Router } from '@angular/router'
 })
 export class CarpNavegacionComponent implements OnInit {
   carpNavegacion: CarpNavegacion[] = [];
-  constructor(private router: Router) { }
+
+  constructor(private router: Router, private datosService: DatosService) { }
 
   ngOnInit() {
-    this.carpNavegacion.push(new CarpNavegacion("Menu","../../../assets/imagenes/Cartas-Mavegacion/menu-n.png"),
-                           new CarpNavegacion("Blog","../../../assets/imagenes/Cartas-Mavegacion/blog-n.png"),
-                           new CarpNavegacion("Nosotros","../../../assets/imagenes/Cartas-Mavegacion/nosotros-n.png"),
-                           new CarpNavegacion("Contactenos","../../../assets/imagenes/Cartas-Mavegacion/contactenos-n.png")
-                           );
+    this.carpNavegacion = this.datosService.getListCarpNavegacion();
+    
   }
 
   navegacion(nav:String){
