@@ -15,9 +15,9 @@ export class MenuComponent implements OnInit {
 
   listMenu: Menu[]=[];
 
-  constructor(private router: Router, private datosService: DatosService) { }
-
-  ngOnInit() {
+  constructor(private router: Router, private datosService: DatosService) {
     this.listMenu = this.datosService.getListMenu();
-  }
+   }
+
+  ngOnInit() {}
 }

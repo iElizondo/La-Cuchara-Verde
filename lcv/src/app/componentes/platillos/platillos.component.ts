@@ -17,9 +17,7 @@ export class PlatillosComponent implements OnInit {
   listPlatillo: Platillo[]=[];
   selectPlatillos: Platillo[]=[];
 
-  constructor(private router:ActivatedRoute, private datosService: DatosService) { }
-
-  ngOnInit() {
+  constructor(private router:ActivatedRoute, private datosService: DatosService) {
     const idMenu = this.router.snapshot.params['id'];
     this.listPlatillo = this.datosService.getListPlatillo();
     for(let platillo of this.listPlatillo){
@@ -27,7 +25,9 @@ export class PlatillosComponent implements OnInit {
         this.selectPlatillos.push(platillo);
       }
     }
-  }
+   }
+
+  ngOnInit() {}
   onPreInfo(plato:Platillo){
     this.datosService.patilloSelec = Object.assign({},plato);
   }

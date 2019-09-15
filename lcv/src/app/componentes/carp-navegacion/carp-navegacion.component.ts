@@ -13,12 +13,11 @@ import { CarpNavegacion } from 'src/app/clases/carp-navegacion';
 export class CarpNavegacionComponent implements OnInit {
   carpNavegacion: CarpNavegacion[] = [];
 
-  constructor(private router: Router, private datosService: DatosService) { }
-
-  ngOnInit() {
+  constructor(private router: Router, private datosService: DatosService) { 
     this.carpNavegacion = this.datosService.getListCarpNavegacion();
-    
   }
+
+  ngOnInit() {}
 
   navegacion(nav:String){
     switch(nav){
