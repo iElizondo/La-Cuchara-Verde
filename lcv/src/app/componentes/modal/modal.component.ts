@@ -8,7 +8,7 @@ import { DatosService } from 'src/app/servicio/datos.service';
 })
 export class ModalComponent implements OnInit {
 
-  constructor(private datosService: DatosService) { }
+  constructor(public datosService: DatosService) { }
 
   ngOnInit() {
   }

@@ -8,10 +8,13 @@ import { DatosService} from 'src/app/servicio/datos.service';
 })
 export class CarruselComponent implements OnInit {
   imagenes: String[]=[]
-  constructor(private datosService: DatosService) {
-    this.imagenes = this.datosService.getListImagenes();
-   }
+  constructor(private datosService: DatosService) {}
 
-  ngOnInit() {}
+  ngOnInit() {
+    this.imagenes.push("../../../assets/imagenes/Carrusel/ima1.jpg",
+                      "../../../assets/imagenes/Carrusel/ima2.jpg",
+                      "../../../assets/imagenes/Carrusel/ima3.jpg",
+                      "../../../assets/imagenes/Carrusel/ima4.jpg");
+  }
 
 }
