@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { PlatillosComponent } from './platillos.component';
+import { PiePaginaComponent } from './pie-pagina.component';
 
-describe('PlatillosComponent', () => {
-  let component: PlatillosComponent;
-  let fixture: ComponentFixture<PlatillosComponent>;
+describe('PiePaginaComponent', () => {
+  let component: PiePaginaComponent;
+  let fixture: ComponentFixture<PiePaginaComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ PlatillosComponent ]
+      declarations: [ PiePaginaComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(PlatillosComponent);
+    fixture = TestBed.createComponent(PiePaginaComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
