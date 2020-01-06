@@ -1,0 +1,30 @@
+.h1{
+    font-size: 2rem;
+    color: #008442;
+}
+.right {
+    text-align:right;
+}
+.btn-menu {
+    color: white;
+    background-color: #88B33F;
+    border-color: #88B33F;
+    margin-top: 15px;
+}
+.titulo{
+    color: #A6CE37;
+}
+.h5{
+    font-size: 1rem;
+    color: #A6CE37;
+}
+.texto{
+    font-size: 1rem;
+}
+.card{
+    margin-bottom: 1rem;
+}
+.separacion{
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
