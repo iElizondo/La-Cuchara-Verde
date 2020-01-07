@@ -11,6 +11,9 @@ import { AngularFontAwesomeModule } from 'angular-font-awesome';
 import { InicioComponent } from './componentes/inicio/inicio.component';
 import { PiePaginaComponent } from './componentes/pie-pagina/pie-pagina.component';
 
+import { AngularFireModule } from '@angular/fire';  
+import { environment } from '../environments/environment'; 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,7 +25,8 @@ import { PiePaginaComponent } from './componentes/pie-pagina/pie-pagina.componen
     BrowserModule,
     AppRoutingModule,
     NgbModule,
-    AngularFontAwesomeModule
+    AngularFontAwesomeModule,
+    AngularFireModule.initializeApp(environment.firebase)
   ],
   providers: [],
   bootstrap: [AppComponent]
